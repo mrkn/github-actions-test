@@ -3,7 +3,7 @@ name: Find libpython
 on: [push]
 
 jobs:
-  find_libpython_on_macos:
+  find_libpython:
 
     runs-on: ${{ matrix.os }}
 
