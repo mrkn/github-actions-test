@@ -1,0 +1,16 @@
+name: Windows
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+    - name: Environment variables
+      run: |
+        dir env:
+
+    - name: Root directory
+      run: |
+        dir C:\
