@@ -11,6 +11,10 @@ jobs:
       run: |
         dir env:
 
+    - name: Path
+      run: |
+        echo $env:Path
+
     - name: Root directory
       run: |
         dir C:\
