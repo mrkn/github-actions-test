@@ -13,8 +13,14 @@ jobs:
 
     - name: Path
       run: |
-        echo $env:Path
+        ForEach ($dir in $env:Path.Split(';')) {
+          echo $dir
+        }
 
     - name: Root directory
       run: |
         dir C:\
+
+    - name: C:\ProgramData
+      run: |
+        dir C:\ProgramData
