@@ -24,3 +24,11 @@ jobs:
     - name: C:\ProgramData
       run: |
         dir C:\ProgramData
+
+    - name: C:\ProgramData\chocolatey
+      run: |
+        dir C:\ProgramData\chocolatey
+
+    - name: pacman
+      run: |
+        where.exe pacman.exe
